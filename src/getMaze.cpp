@@ -1,8 +1,9 @@
 #include "../include/mazeHeader.hpp"
-#include <array>
 
 std::array<std::array<char, 12>, 12> getMaze() {
+    // Define the function that returns an array of arrays (12x12)
     std::array<std::array<char, 12>, 12> maze = {{
+        // The actual maze as characters:
         {'#','#','#','#','#','#','#','#','#','#','#','#'},
         {'#','.','.','.','#','.','.','.','.','.','.','#'},
         {'.','.','#','.','#','.','#','#','#','#','.','#'},
