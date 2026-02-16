@@ -1,5 +1,4 @@
 #include "../include/mazeHeader.hpp"
-#include <iostream>
 
 void printMaze(const std::array<std::array<char,12>,12>& maze) {
     for (const std::array<char, 12>& row : maze) {
@@ -8,4 +7,5 @@ void printMaze(const std::array<std::array<char,12>,12>& maze) {
         }
         std::cout << std::endl;
     }
+    std::cout << "----------------------" << std::endl;
 }

@@ -5,9 +5,8 @@ int main(void) {
 
     printMaze(maze);
     std::pair<int,int> start = getStart(maze);
-
-    int x_start = start.first;
-    int y_start = start.second;
+    Direction init_direction = Direction::Left;
+    traverseMaze(maze, start, init_direction);
 
     return 0;
 }

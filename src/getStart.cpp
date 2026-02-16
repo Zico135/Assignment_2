@@ -5,7 +5,7 @@ std::pair<int,int> getStart(const std::array<std::array<char,12>,12>& maze) {
     for (int row = 0; row < 12; row++) {
         for (int col = 0; col < 12; col++) {
             if (maze[row][col] == 'x') {
-                std::cout << "start position is: " << row << ' ' << col;
+                std::cout << "start position is: " << row << ' ' << col << std::endl;
                 return {row,col};
             }
         }
