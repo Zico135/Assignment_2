@@ -136,14 +136,33 @@ public:
       std::cout << "\n\n";
    }
    
-   void fillList(List<char>& list, std::string& input) {
+   //------------------ADDED FUNCTIONS------------------
+   void fillList(const std::string& input) {
       if (input.empty()) {
          std::cout << "No input given\n";
-      }
+      } // Nothing to fill the list with
+
       for (const char c : input) {
-         list.insertAtBack(c);
+         //for every character in input we insert the character at the back of the list.
+         insertAtBack(c);
       }
    }
+
+   void concatenate(List<NODETYPE>& other_list) {
+      if (other_list.isEmpty()) {
+         std::cout << "Other list is empty, nothing to concatenate\n";
+      } // Nothing to concatenate
+
+      // Link last node of current list to first node of other list 
+      lastPtr->nextPtr = other_list.firstPtr;   
+      // Update lastPtr to the last node of the other list
+      lastPtr=other_list.lastPtr;
+      // Clear the other list               
+      other_list.firstPtr = nullptr;           
+      other_list.lastPtr = nullptr;
+   }
+
+   //------------------END OF ADDED FUNCTIONS------------------
 
 private:
    ListNode<NODETYPE>* firstPtr{nullptr}; // pointer to first node
