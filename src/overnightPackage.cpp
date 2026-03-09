@@ -1,8 +1,9 @@
-#include "Package.h"
-#ifndef TWO_DAY_PACKAGE_H
-#define TWO_DAY_PACKAGE_H
+#include "OvernightPackage.h"
+#include <iostream>
 
-class TwoDayPackage : public Package {
+
+
+OvernightPackage : public Package {
     private:
         float Cost;
     
@@ -10,5 +11,3 @@ class TwoDayPackage : public Package {
         virtual void printInfo() override;
         virtual float calculateCost(float weightPackage) override;
 };
-
-#endif
