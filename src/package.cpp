@@ -70,7 +70,11 @@ class Package {
             std::cout << "Weight: " << weight << " kg" << std::endl;
         }
 
-        float calculateCost(float weightPackage);
+        float Package::calculateCost(float weightPackage){
+            std::cout << "Error, you have not specified which shipment type you want(cost too large for your broke ass) " << std::endl;
+            return 0; // 
+        }
+
 
 
 
