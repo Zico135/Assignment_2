@@ -3,7 +3,7 @@
 #include <string>
 
 
-class Package {
+Package {
     private:
         std::string senderName;
         std::string recipientName;
