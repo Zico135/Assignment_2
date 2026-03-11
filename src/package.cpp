@@ -89,7 +89,6 @@ void Package::printCost(const std::list<Package*>& packages) {
         //Round the cost to 2 decimals, since we cant charge smaller than cents
         float cost_rounded = std::round(cost * 100.0) / 100.0;
         //Print the info to show what package it is and what the cost is
-        std::cout << "The package with info:" << std::endl;
         package->printInfo();
         std::cout << " costs: " << cost_rounded << " Euros" << std::endl;
         std::cout << "===========================================================" << std::endl;
