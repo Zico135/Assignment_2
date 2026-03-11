@@ -13,7 +13,7 @@ TwoDayPackage::TwoDayPackage(std::string senderName_, std::string recipientName_
 
 //Overwrite the package printInfo function to show that this is a two day package
 void TwoDayPackage::printInfo() {
-    std::cout << "This is a two day package" << std::endl;
+    std::cout << "This is an two day package with the following info:" << std::endl;
     Package::printInfo();
 }
 
