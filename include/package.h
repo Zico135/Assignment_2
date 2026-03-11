@@ -9,7 +9,9 @@
 class Package {
     protected:
         float weight;
-
+        float expCost = 1.1; // exponential cost factor variable
+        float linCost = 2.5; // linear cost factor variable
+        float flatFee = 5.0; // flat fee variable
     private:
         std::string senderName;
         std::string recipientName;

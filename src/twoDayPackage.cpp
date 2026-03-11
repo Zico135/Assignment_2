@@ -8,5 +8,5 @@ void TwoDayPackage::printInfo() {
 }
 
 float TwoDayPackage::calculateCost() {
-    return weight * 2.5 + 5; 
+    return weight * linCost + flatFee; 
 }

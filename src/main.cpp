@@ -31,5 +31,6 @@ int main() {
 
     //Call the print function to print the cost of each package
     Package::printCost(packages);
+
     return 0;
 }
