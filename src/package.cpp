@@ -65,15 +65,17 @@ void Package::printInfo(){
     std::cout << "Weight: " << weight << " kg" << std::endl;
 }
 
-float Package::calculateCost(float weightPackage){
+float Package::calculateCost(){
     std::cout << "Error, you have not specified which shipment type you want(cost too large for your broke ass) " << std::endl;
     return 0; // 
 }
 
-static void printCost(const std::list<Package>& packages) {
+void Package::printCost(const std::list<Package*>& packages) {
     for (const auto& package : packages) {
-        float cost = package.calculateCost();
-        std::cout << "Package from " << package.getSenderName() << " to " << package.getReceiverName() 
-                  << " costs: €" << cost << std::endl;
+        float cost = package->calculateCost();
+        float cost_rounded = std::round(cost * 100.0) / 100.0;
+        std::cout << "The package with info:" << std::endl;
+        package->printInfo();
+        std::cout << " costs: " << cost_rounded << " Euros" << std::endl;
     }
 }

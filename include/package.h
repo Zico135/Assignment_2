@@ -1,6 +1,7 @@
 #include <string>
 #include <iostream>
 #include <list>
+#include <cmath>
 
 #ifndef PACKAGE_H
 #define PACKAGE_H
@@ -35,7 +36,7 @@ class Package {
         float getWeight();
         
         virtual void printInfo();
-        virtual float calculateCost(float weightPackage);
-        static void printCost(const std::list<Package>& packages);
+        virtual float calculateCost();
+        static void printCost(const std::list<Package*>& packages);
 };
 #endif

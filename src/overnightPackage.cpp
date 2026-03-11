@@ -1,14 +1,12 @@
 #include "OvernightPackage.h"
 
-OvernightPackage::OvernightPackage(std::string senderName_, std::string recipientName_, std::string senderAddress_, std::string recipientAddress_, float weight_, float cost_) : Package(senderName_, recipientName_, senderAddress_, recipientAddress_, weight_){
-    cost = cost_;
-}
+OvernightPackage::OvernightPackage(std::string senderName_, std::string recipientName_, std::string senderAddress_, std::string recipientAddress_, float weight_) : Package(senderName_, recipientName_, senderAddress_, recipientAddress_, weight_){}
 
 void OvernightPackage::printInfo() {
+    std::cout << "This is an overnight package with the following info:" << std::endl;
     Package::printInfo();
-    std::cout << "Overnight Package Cost: $" << cost << std::endl;
 }
 
-float OvernightPackage::calculateCost(float weightPackage) {
-    return weightPackage*weightPackage * 1.1 + weightPackage * 2.5 + 5; // example cost calculation for overnight package
+float OvernightPackage::calculateCost() {
+    return weight*weight * 1.1 + weight * 2.5 + 5; // example cost calculation for overnight package
 }
