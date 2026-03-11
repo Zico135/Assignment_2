@@ -92,5 +92,7 @@ void Package::printCost(const std::list<Package*>& packages) {
         std::cout << "The package with info:" << std::endl;
         package->printInfo();
         std::cout << " costs: " << cost_rounded << " Euros" << std::endl;
+        std::cout << "===========================================================" << std::endl;
+        std::cout << std::endl;
     }
 }

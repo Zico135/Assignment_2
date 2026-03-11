@@ -11,13 +11,13 @@
 
 int main() {
     //Create some packages
-    OvernightPackage* overnightPackage1 = new OvernightPackage("John Doe", "123 Main St", "Jane Smith", "456 Oak Ave", 2.5);
-    OvernightPackage* overnightPackage2 = new OvernightPackage("Luke D.", "Somewhere in South Africa", "Zico N.", "the Netherlands", 5.3);
-    OvernightPackage* overnightPackage3 = new OvernightPackage("Zico N.", "the Netherlands", "Luke D.", "Somewhere in South Africa", 1.4);
+    OvernightPackage* overnightPackage1 = new OvernightPackage("John Doe", "Jane Smith", "123 Main St", "456 Oak Ave", 2.5);
+    OvernightPackage* overnightPackage2 = new OvernightPackage("Luke D.", "Zico N.", "Somewhere in South Africa", "the Netherlands", 5.3);
+    OvernightPackage* overnightPackage3 = new OvernightPackage("Zico N.", "Luke D.", "the Netherlands", "Somewhere in South Africa", 1.4);
 
-    TwoDayPackage* twoDayPackage1 = new TwoDayPackage("Bob Wilson", "789 Pine Rd", "Alice Brown", "321 Elm St", 1.8);
-    TwoDayPackage* twoDayPackage2 = new TwoDayPackage("L. Delmulle", "Waalstraat 174, Enschede", "Z. Nederhand", "Waalstraat 195, Enschede", 4.2);
-    TwoDayPackage* twoDayPackage3 = new TwoDayPackage("Z. Nederhand", "Waalstraat 195, Enschede", "L. Delmulle", "Waalstraat 174, Enschede", 34);
+    TwoDayPackage* twoDayPackage1 = new TwoDayPackage("Bob Wilson", "Alice Brown", "789 Pine Rd", "321 Elm St", 1.8);
+    TwoDayPackage* twoDayPackage2 = new TwoDayPackage("L. Delmulle", "Z. Nederhand", "Waalstraat 93, Enschede", "Waalstraat 195, Enschede", 4.2);
+    TwoDayPackage* twoDayPackage3 = new TwoDayPackage("Z. Nederhand", "L. Delmulle", "Waalstraat 195, Enschede", "Waalstraat 93, Enschede", 34);
 
     //Create a list of packages
     std::list<Package*> packages;
