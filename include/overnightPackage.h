@@ -11,7 +11,8 @@ class OvernightPackage : public Package {
     //constructor
         OvernightPackage(const std::string senderName, const std::string recipientName, const std::string senderAddress, const std::string recipientAddress, const float weight) ;
         virtual void printInfo() override;
-        virtual float calculateCost() override;
+        virtual void calculateCost(float weight) override;
+        float GetCost();
 };
 
 #endif
