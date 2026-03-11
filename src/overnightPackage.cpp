@@ -19,5 +19,5 @@ void OvernightPackage::printInfo() {
 
 //Overwrite the package calculateCost function to calculate the cost of an overnight package, which is different from a two day package
 float OvernightPackage::calculateCost() {
-    return weight*weight * expCost + weight * linCost + flatFee; // weight^2*1.1 + weight*2.5 + 5
+    return weight*weight * exponentialCost + weight * linearCost + flatFee; // weight^2*1.1 + weight*2.5 + 5
 }
