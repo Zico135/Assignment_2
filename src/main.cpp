@@ -5,7 +5,10 @@
 //
 // Brief : Main function, it makes a hardcoded list of packages and calls the print cost function.
 //==================================================================================================
-#include "inheritance.h"
+#include "Package.h"
+#include "TwoDayPackage.h"
+#include "OvernightPackage.h"
+
 int main() {
     //make list;
     //call print costs;
@@ -13,6 +16,6 @@ int main() {
     packages.push_back(Package("John Doe", "123 Main St", "Jane Smith", "456 Oak Ave", 2.5));
     packages.push_back(Package("Bob Wilson", "789 Pine Rd", "Alice Brown", "321 Elm St", 1.8));
     
-    printCost(packages);
+    Package::printCost(packages);
     return 0;
 }

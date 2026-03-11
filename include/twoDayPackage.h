@@ -4,9 +4,12 @@
 
 class TwoDayPackage : public Package {
     private:
-        float Cost;
+        float cost;
     
     public:
+        //constructor
+        TwoDayPackage(std::string senderName_, std::string recipientName_, std::string senderAddress_, std::string recipientAddress_, float weight, float cost);
+        
         virtual void printInfo() override;
         virtual float calculateCost(float weightPackage) override;
 };
