@@ -17,7 +17,10 @@ class TwoDayPackage : public Package {
     public:
         //Constructor
         TwoDayPackage(std::string senderName_, std::string recipientName_, std::string senderAddress_, std::string recipientAddress_, float weight);
-                       
+               
+        //Destructor
+        ~TwoDayPackage() {};
+        
         //Overwrite the function in Package.h
         virtual void printInfo() override;
         //Overwrite the function in Package.h

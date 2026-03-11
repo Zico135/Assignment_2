@@ -35,6 +35,9 @@ class Package {
         //Constructor
         Package(std::string senderName_, std::string recipientName_, std::string senderAddress_, std::string recipientAddress_, float weight_);
         
+        //Destructor
+        virtual ~Package() {};
+
         //set and get functions to access the variables from outside the class. These are not used for the assignment
         void setSenderName(const std::string& nameSender);
         std::string getSenderName();

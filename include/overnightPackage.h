@@ -18,6 +18,9 @@ class OvernightPackage : public Package {
         //Constructor
         OvernightPackage(std::string senderName_, std::string recipientName_, std::string senderAddress_, std::string recipientAddress_, float weight);
         
+        //Destructor
+        ~OvernightPackage() {};
+
         //Overwrite the function in Package.h
         virtual void printInfo() override;
         //Overwrite the function in Package.h
